@@ -1,4 +1,4 @@
-export const readDOMScript = (id: String) => {
+export const readDOMScript = (id: string) => {
     const element = document.getElementById(id);
     let obj;
     if (element) {

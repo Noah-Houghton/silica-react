@@ -1,0 +1,28 @@
+{
+  "exclude":[
+    "node_modules"
+  ],
+  "files": [
+    "./src/index.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "lib",
+    "sourceMap": true,
+    "baseUrl": "src",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "dom"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "jsx": "react",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "importHelpers": true
+  },
+}

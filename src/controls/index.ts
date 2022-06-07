@@ -24,12 +24,12 @@
 */
 import SilicaInputControl, { inputControlTester } from './SilicaInputControl';
 import SilicaRadioGroupControl, { radioGroupControlTester } from './SilicaRadioGroupControl';
-import OneOfSilicaRadioGroupControl, { oneOfSilicaRadioGroupControlTester } from './SilicaOneOfRadioGroupControl';
+import OneOfSilicaRadioGroupControl, { oneOfRadioGroupControlTester } from './SilicaOneOfRadioGroupControl';
 export {
   SilicaInputControl,
   inputControlTester,
   SilicaRadioGroupControl,
   radioGroupControlTester,
   OneOfSilicaRadioGroupControl,
-  oneOfSilicaRadioGroupControlTester
+  oneOfRadioGroupControlTester
 };

@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import SilicaFormBody from "./SilicaFormBody";
 
 SilicaForm.propTypes = {};
 
 SilicaForm.defaultProps = {}
 
-function SilicaForm(props) {
+function SilicaForm(props: any) {
     const {
         id,
         submitText,

@@ -22,7 +22,7 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   THE SOFTWARE.
 */
-import { renderExample } from './src';
+import { renderExample } from './src/renderExample';
 import {silicaCells, silicaRenderers} from "../src";
-
+import "core-js/stable";
 renderExample(silicaRenderers, silicaCells);

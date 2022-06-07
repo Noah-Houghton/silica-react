@@ -23,5 +23,5 @@
   THE SOFTWARE.
 */
 
-export * from './styleContext';
+export * from './styleContent';
 export * from './styles';

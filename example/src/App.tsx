@@ -32,10 +32,12 @@ import {
   JsonSchema
 } from '@jsonforms/core';
 import { resolveRefs } from 'json-refs';
+// @ts-ignore
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Highlight from 'react-highlight';
 import 'highlight.js/styles/default.css';
-import './App.css';
+// import './App.css';
+import SilicaForm from "../../src/lib/SilicaForm";
 
 type AppProps = {
   examples: ExampleDescription[],
@@ -74,6 +76,7 @@ const getProps = (example: ExampleDescription, cells?: any, renderers?: any) => 
   const schema = example.schema;
   const uischema = example.uischema;
   const data = example.data;
+  // @ts-ignore
   const uischemas = example.uischemas;
   const config = example.config;
   return {
@@ -96,6 +99,7 @@ const App = ({ examples, cells, renderers}: AppProps) => {
   const schemaAsString = useMemo(() => JSON.stringify(props.schema, null, 2), [props.schema]);
   const uiSchemaAsString = useMemo(() => JSON.stringify(props.uischema, null, 2), [props.uischema]);
 
+  // @ts-ignore
   const actions: Action[] = currentExample.actions;
 
   useEffect(() => {
@@ -127,10 +131,15 @@ const App = ({ examples, cells, renderers}: AppProps) => {
     <div>
       <div className='App'>
         <header className='header'>
-          <img src='assets/logo.svg' className='logo' alt='logo' />
           <h1 className='title'>Welcome to JSON Forms with React</h1>
           <p className='intro'>More Forms. Less Code.</p>
         </header>
+        <div className='test'>
+          <SilicaForm
+            {...props}
+            onChange={({ data }: any) => changeData(data)}
+          />
+        </div>
         <div className='content'>
           <div className='tools'>
             <div className='example-selector'>

@@ -30,11 +30,11 @@ import {
   rankWith,
 } from '@jsonforms/core';
 import { withJsonFormsCellProps } from '@jsonforms/react';
-import { StatelessComponent } from 'react';
+import { FunctionComponent } from 'react';
 import { VanillaRendererProps } from '../index';
 import { withVanillaBooleanCellProps } from '../util/index';
 
-export const SilicaBooleanCell: StatelessComponent<CellProps> =
+export const SilicaBooleanCell: FunctionComponent<CellProps> =
   (props: CellProps & VanillaRendererProps) => {
     const { data, className, id, enabled, uischema, path, handleChange } = props;
 

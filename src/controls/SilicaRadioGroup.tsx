@@ -32,7 +32,7 @@ import {
 import { VanillaRendererProps } from '../index';
 import { findStyleAsClassName } from '../reducers/styling';
 import { useStyles } from '../styles';
-import merge from 'lodash/merge';
+import {merge} from 'lodash';
 import { useMemo, useState } from 'react';
 
 export const SilicaRadioGroup = ({

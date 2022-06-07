@@ -22,20 +22,20 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   THE SOFTWARE.
 */
-import ArrayControl, { arrayControlTester } from './array';
-import Categorization, { categorizationTester } from './categorization';
-import LabelRenderer, { labelRendererTester } from './SilicaLabelRenderer';
-import TableArrayControl, {
+import SilicaArrayControl, { arrayControlTester } from './array';
+import SilicaCategorization, { categorizationTester } from './categorization';
+import SilicaLabelRenderer, { labelRendererTester } from './SilicaLabelRenderer';
+import SilicaTableArrayControl, {
   tableArrayControlTester
 } from './SilicaTableArrayControl';
 
 export {
-  ArrayControl,
+  SilicaArrayControl,
   arrayControlTester,
-  Categorization,
+  SilicaCategorization,
   categorizationTester,
-  LabelRenderer,
+  SilicaLabelRenderer,
   labelRendererTester,
-  TableArrayControl,
+  SilicaTableArrayControl,
   tableArrayControlTester
 };

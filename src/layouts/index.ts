@@ -22,15 +22,15 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   THE SOFTWARE.
 */
-import GroupLayout, { groupTester } from './SilicaGroupLayout';
-import HorizontalLayout, { horizontalLayoutTester } from './SilicaHorizontalLayout';
-import VerticalLayout, { verticalLayoutTester } from './SilicaVerticalLayout';
+import SilicaGroupLayout, { groupTester } from './SilicaGroupLayout';
+import SilicaHorizontalLayout, { horizontalLayoutTester } from './SilicaHorizontalLayout';
+import SilicaVerticalLayout, { verticalLayoutTester } from './SilicaVerticalLayout';
 
 export {
-  GroupLayout,
+  SilicaGroupLayout,
   groupTester,
-  HorizontalLayout,
+  SilicaHorizontalLayout,
   horizontalLayoutTester,
-  VerticalLayout,
+  SilicaVerticalLayout,
   verticalLayoutTester
 };

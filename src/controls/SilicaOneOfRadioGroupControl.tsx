@@ -40,7 +40,7 @@ export const SilicaOneOfRadioGroupControl = (props: ControlProps & VanillaRender
   return <SilicaRadioGroup {...props} />;
 };
 
-export const oneOfSilicaRadioGroupControlTester: RankedTester = rankWith(
+export const oneOfRadioGroupControlTester: RankedTester = rankWith(
   3,
   and(isOneOfEnumControl, optionIs('format', 'radio'))
 );

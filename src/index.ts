@@ -46,7 +46,7 @@ import {
   timeCellTester
 } from './cells';
 
-import { SilicaInputControl, inputControlTester, SilicaRadioGroupControl, radioGroupControlTester, OneOfSilicaRadioGroupControl, oneOfSilicaRadioGroupControlTester,  } from './controls';
+import { SilicaInputControl, inputControlTester, SilicaRadioGroupControl, radioGroupControlTester, OneOfSilicaRadioGroupControl, oneOfRadioGroupControlTester,  } from './controls';
 
 import {
   SilicaArrayControl,
@@ -111,7 +111,7 @@ export * from './styles';
 export const silicaRenderers: { tester: RankedTester; renderer: any }[] = [
   { tester: inputControlTester, renderer: SilicaInputControl },
   { tester: radioGroupControlTester, renderer: SilicaRadioGroupControl },
-  { tester: oneOfSilicaRadioGroupControlTester, renderer: OneOfSilicaRadioGroupControl },
+  { tester: oneOfRadioGroupControlTester, renderer: OneOfSilicaRadioGroupControl },
   { tester: arrayControlTester, renderer: SilicaArrayControl },
   { tester: labelRendererTester, renderer: SilicaLabelRenderer },
   { tester: categorizationTester, renderer: SilicaCategorization },
